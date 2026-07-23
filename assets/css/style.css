@@ -306,7 +306,7 @@ h1, h2, h3 {
 
 /* ============================================================
    Page Intro
-   ============================================================ */
+   ============================== */
 .eyebrow {
   font-size: var(--text-xs);
   font-weight: 600;
@@ -325,9 +325,7 @@ h1, h2, h3 {
 }
 
 .page-intro .subtitle {
-  font-family: var(--font-body);
   font-size: var(--text-lg);
-  font-weight: 400;
   color: var(--color-text-muted);
   margin-top: 0;
 }
@@ -873,7 +871,7 @@ h1, h2, h3 {
   border-radius: var(--radius-lg);
 }
 
-/* ============================================================
+/* ============================
    Star Rating
    ============================================================ */
 .star-rating { display: flex; gap: var(--space-1); }
