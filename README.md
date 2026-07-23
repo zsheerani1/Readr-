@@ -2,7 +2,7 @@
 
 [One-paragraph pitch. What Readr is, who it is for, and the value it provides.]
 
-**Live site:** [https://YOUR-USERNAME.github.io/Readr/](https://YOUR-USERNAME.github.io/Readr/)
+**Live site:** https://zsheerani1.github.io/Readr-/
 
 ![Readr dashboard on desktop](docs/screenshots/hero.png)
 
