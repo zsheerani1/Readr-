@@ -325,10 +325,13 @@ h1, h2, h3 {
 }
 
 .page-intro .subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
   font-size: var(--text-lg);
   color: var(--color-text-muted);
   margin-top: 0;
 }
+
 
 @media (min-width: 900px) {
   .page-intro h1 { font-size: var(--text-3xl); }
