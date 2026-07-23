@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const BOOKS_API = 'https://www.googleapis.com/books/v1/volumes';
   const BOOKS_API_KEY = '...';
   const SEARCH_DEBOUNCE = 350;
-  const MONTHS = [...];
+  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
   const STATUS_LABELS = {...};
 
   /* ---------- State ---------- */
