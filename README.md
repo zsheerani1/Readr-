@@ -26,16 +26,15 @@ Readr is a reading tracker web application for people who love books but lose tr
 
 ### 1.1 Purpose
 
-[2–3 sentences on the problem Readr solves and why the alternatives fall short.]
+Readr serves to address the gap between wanting to read more and actually keeping track of it.  Readers currently juggle several disconnected tools — an online bookshop search to find titles, a notes app to remember what they meant to read, and memory alone to track what they've finished — with no single place that synthesises all data points into a personal reading record. Existing alternatives fall short at opposite extremes: Goodreads is feature-heavy, cluttered with social features many readers don't want, and slow to search; while a plain notes list offers no book metadata, covers, or search. Readr sits between them, offering fast search across a large catalogue with a lightweight personal shelf, and nothing else.
 
 ### 1.2 Target Audience
 
-[Describe your audience concretely — who they are and what they need.]
+Readr's primary audience is casual-to-regular readers aged roughly 18–40 who read between one and three books a month and want a low-friction way to track them. They are comfortable with web apps but not looking for a social network — they want to search a title, save it, and mark it as read without creating a profile or managing a feed. A secondary audience is students and book-club members who need to assemble and manage a reading list over a term or season. Both groups share the same core needs: fast search with reliable metadata, a persistent personal list, clear reading status, and an interface that works equally well on a phone and a laptop.
 
 ### 1.3 Rationale
 
-[Why you built this project, and why a front-end web app with an external API
-is the right solution for that audience.]
+I chose this project because it targets a problem I understand directly as a reader. A front-end web application is the appropriate solution for this audience because the app's value lies in speed and accessibility: users reach it instantly through a browser on any device with no installation, which suits a tool intended for quick, occasional interactions. Consuming an external API is the correct architectural decision because book metadata: titles, authors, ISBNs, cover images, publication data, is an enormous, constantly changing dataset that would be impractical and unnecessary to build and maintain myself. Delegating that to an established API lets development focus on the parts that create actual value for the user: the search experience, the personal shelf, and the interface. This also demonstrates the client-side skills the project is intended to evidence — asynchronous requests, handling API responses and error states, dynamic DOM rendering, and persisting user data on the client.
 
 ---
 
@@ -43,29 +42,20 @@ is the right solution for that audience.]
 
 **First-time visitor:**
 
-- **US1:** As a first-time visitor, I want to understand what the site does
-  immediately, so that I can decide whether it is useful to me.
-- **US2:** As a first-time visitor, I want to add my first book quickly, so
-  that I can start using the app without setup.
+- **US1:** 
+- **US2:** 
 
 **Returning reader:**
 
-- **US3:** As a reader, I want to search for a book by title, author, or ISBN,
-  so that I can add it without typing the details manually.
-- **US4:** As a reader, I want to record my current page, so that I can see my
-  progress through each book.
-- **US5:** As a reader, I want to set monthly and yearly reading goals, so
-  that I can stay motivated.
-- **US6:** As a reader, I want to filter and search my library, so that I can
-  find a specific book quickly.
+- **US3:** As a returning user, I want my saved books to still be there when I reopen the app, so that I don't have to rebuild my list each visit.
+- **US4:** I want to mark a book as read, so that I can distinguish what I've finished from what I still plan to read.
+- **US5:** I want to filter or view my shelf by reading status, so that I can see at a glance what I'm currently working through.
+- **US6:** I want to remove a book from my shelf, so that my list stays relevant and uncluttered.
 - **US7:** As a reader, I want to rate books I have finished, so that I can
   remember which ones I enjoyed.
-- **US8:** As a reader, I want my library to be saved between visits, so that
-  I do not lose my data when I close the browser.
-- **US9:** As a reader, I want to use the app comfortably on my phone, so that
-  I can update progress while reading in bed.
-- **US10:** As a reader, I want the option of a dark theme, so that the app is
-  comfortable to use at night.
+- **US8:** 
+- **US9:** 
+- **US10:** 
 
 ---
 
