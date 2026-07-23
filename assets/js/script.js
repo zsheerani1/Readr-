@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   /* ---------- Constants ---------- */
   const STORAGE_KEY = 'readr.books';
   const GOALS_KEY = 'readr.goals';
@@ -7,15 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const BOOKS_API = 'https://www.googleapis.com/books/v1/volumes';
   const BOOKS_API_KEY = 'AIzaSyCnsWA1WhR52zFkoR26Yeja_FxsCmun4vQ';
   const SEARCH_DEBOUNCE = 350;
+
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'];
-    const STATUS_LABELS = {
+
+  const STATUS_LABELS = {
     'want-to-read': 'Want to Read',
     'reading': 'Reading',
     'finished': 'Finished'
   };
 
-  /* ---------- State ---------- */
+  /* ---------- State -------- */
   let books = loadBooks();
   let goals = loadGoals();
   let currentFilter = 'all';
@@ -26,48 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastFocused = null;
   let searchTimer = null;
   let searchRequestId = 0;
-
-  /* ---------- Persistence ---------- */
-  function loadBooks() {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : [];
-    } catch (err) {
-      console.error('Could not read books from storage:', err);
-      return [];
-    }
-  }
-
-  function saveBooks() {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
-    } catch (err) {
-      console.error('Could not save books:', err);
-    }
-  }
-
-  /* ---------- Book actions ---------- */
-  function addBook(book) {
-    if (books.some(b => b.id === book.id)) return;
-    books.push(book);
-    saveBooks();
-    render();
-  }
-
-  function removeBook(id) {
-    books = books.filter(b => b.id !== id);
-    saveBooks();
-    render();
-  }
-
-  function setStatus(id, status) {
-    const book = books.find(b => b.id === id);
-    if (!book) return;
-    book.status = status;
-    saveBooks();
-    render();
-  }
-});
   
   /* ---------- DOM References ---------- */
   const $ = (id) => document.getElementById(id);
