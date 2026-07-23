@@ -1,6 +1,6 @@
 # Readr
 
-[One-paragraph pitch. What Readr is, who it is for, and the value it provides.]
+Readr is a reading tracker web application for people who love books but lose track of them. It lets readers build a personal library by searching the Google Books API — autofilling titles, authors, page counts, and cover art — then track their progress page by page, rate the books they finish, and set monthly and yearly reading goals with visual progress indicators. Everything is saved in the browser, so there are no accounts, no sign-ups; just a clean, fast way for casual readers to see what they're reading, what's next, and how close they are to their reading goals.
 
 **Live site:** https://zsheerani1.github.io/Readr-/
 
