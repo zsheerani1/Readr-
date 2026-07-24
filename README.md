@@ -1,6 +1,6 @@
 # Readr
 
-Readr is a reading tracker web application for people who love books but lose track of them. It lets readers build a personal library by searching the Google Books API — autofilling titles, authors, page counts, and cover art — then track their progress page by page, rate the books they finish, and set monthly and yearly reading goals with visual progress indicators. Everything is saved in the browser, so there are no accounts, no sign-ups; just a clean, fast way for casual readers to see what they're reading, what's next, and how close they are to their reading goals.
+Readr is a reading tracker interactive web application for people who love books but lose track of them. It lets readers build a personal library by searching the Google Books API: autofilling titles, authors, page counts, and cover art, then track their progress page by page, rate the books they finish, and set monthly and yearly reading goals with visual progress indicators. Everything is saved in the browser, so there are no accounts, no sign-ups; just a clean, fast way for casual readers to see what they're reading, what's next, and how close they are to their reading goals.
 
 **Live site:** https://zsheerani1.github.io/Readr-/
 
@@ -34,7 +34,7 @@ Readr's primary audience is casual-to-regular readers aged roughly 18–40 who r
 
 ### 1.3 Rationale
 
-I chose this project because it targets a problem I understand directly as a reader. A front-end web application is the appropriate solution for this audience because the app's value lies in speed and accessibility: users reach it instantly through a browser on any device with no installation, which suits a tool intended for quick, occasional interactions. Consuming an external API is the correct architectural decision because book metadata: titles, authors, ISBNs, cover images, publication data, is an enormous, constantly changing dataset that would be impractical and unnecessary to build and maintain myself. Delegating that to an established API lets development focus on the parts that create actual value for the user: the search experience, the personal shelf, and the interface. This also demonstrates the client-side skills the project is intended to evidence — asynchronous requests, handling API responses and error states, dynamic DOM rendering, and persisting user data on the client.
+I chose this project because it targets a problem I understand directly as a reader. A front-end web application is the appropriate solution for this audience because the app's value lies in speed and accessibility: users reach it instantly through a browser on any device with no installation, which suits a tool intended for quick, occasional interactions. Consuming an external API is the correct architectural decision because book metadata: titles, authors, ISBNs, cover images, publication data, is an enormous, constantly changing dataset that would be impractical and unnecessary to build and maintain myself. Delegating that to an established API lets development focus on the parts that create actual value for the user: the search experience, the personal shelf, and the interface. This also demonstrates the client-side skills the project is intended to evidence- asynchronous requests, handling API responses and error states, dynamic DOM rendering, and persisting user data on the client.
 
 ---
 
@@ -42,8 +42,8 @@ I chose this project because it targets a problem I understand directly as a rea
 
 **First-time visitor:**
 
-- **US1:** 
-- **US2:** 
+- **US1:** As a user, I want to search for a book by title or author and see results with covers and key details, so that I can confirm I'm saving the right edition.
+- **US2:** As a user, I want to navigate and operate the app by keyboard and with a screen reader, so that I can use it regardless of how I access the web.
 
 **Returning reader:**
 
@@ -53,8 +53,8 @@ I chose this project because it targets a problem I understand directly as a rea
 - **US6:** I want to remove a book from my shelf, so that my list stays relevant and uncluttered.
 - **US7:** As a reader, I want to rate books I have finished, so that I can
   remember which ones I enjoyed.
-- **US8:** 
-- **US9:** 
+- **US8:** I want to see statistics about my reading over time, so that I can understand my habits and whether I'm reading more than before.
+- **US9:** I want the app to remember my light/dark theme preference, so that it looks the way I left it every time I return.
 - **US10:** 
 
 ---
