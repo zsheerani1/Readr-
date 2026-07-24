@@ -145,12 +145,12 @@
           <span class="count-badge" id="library-count">0 books</span>
         </div>
 
-        <div class="pill-tabs" role="tablist" aria-label="Filter books by status">
-          <button type="button" class="pill-tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
-          <button type="button" class="pill-tab" role="tab" aria-selected="false" data-filter="reading">Reading</button>
-          <button type="button" class="pill-tab" role="tab" aria-selected="false" data-filter="want-to-read">Want to Read</button>
-          <button type="button" class="pill-tab" role="tab" aria-selected="false" data-filter="finished">Finished</button>
-        </div>
+      <div class="pill-tabs" role="group" aria-label="Filter books by status">
+  <button type="button" class="pill-tab is-active" aria-pressed="true" data-filter="all">All</button>
+  <button type="button" class="pill-tab" aria-pressed="false" data-filter="reading">Reading</button>
+  <button type="button" class="pill-tab" aria-pressed="false" data-filter="want-to-read">Want to Read</button>
+  <button type="button" class="pill-tab" aria-pressed="false" data-filter="finished">Finished</button>
+</div>
 
         <ul id="book-list" role="list" class="book-list">
         </ul>
