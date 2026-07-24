@@ -78,7 +78,9 @@ The main column is ordered by priority for a returning user. A greeting confirms
 
 'Your Shelf' follows as a scrolling row of covers, giving a quick visual sense of the collection. The full library list comes last, as the most detailed view and the least often needed.
 
-Hierarchy is carried by headings, type size and spacing rather than borders. Section headings are set in a larger serif face so the boundaries between sections are obvious at a glance. Each library row shows cover, title, author, rating, progress and status together, answering the likely questions about a book in one look. Status appears as both a text label and a progress bar, not colour alone, so it stays readable for users who can't distinguish the colours.
+Hierarchy is carried by headings, type size and spacing rather than borders. Section headings are set in a larger serif face so the boundaries between sections are obvious at a glance. Each library row shows cover, title, author, rating, progress and status together, answering the likely questions about a book in one look.
+
+'Status' appears as both a text label and a progress bar, not colour alone, so it stays readable for users who can't distinguish the colours.
 
 The library filters rather than paginates. The controls: All, Reading, Want to Read, Finished, reuse the same three states used everywhere else in the app, keeping the vocabulary consistent.
 
