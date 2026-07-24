@@ -250,11 +250,12 @@ that these are covered by the manual procedures below.]
 
 ### 6.6 Testing During Development
 
-[Describe your ongoing routine: browser-testing each feature as built,
-checking the console after user actions, running `npm test` before commits,
-and after each deployment hard-refreshing the live site and running a smoke
-test to confirm the deployed version matches development. Evidence in
-`docs/testing/`.]
+- Testing ran alongside development rather than at the end. Each feature was tested in the browser as it was built, with DevTools open throughout: the console checked after every user action, and the Application tab used to confirm data was persisting correctly.
+Work was committed after each feature or fix, so there was always a working version to return to. This mattered when an editing error introduced a duplicate variable declaration and stopped the whole script running; the console identified the line, and the previous commit gave a reference point for the fix.
+
+- Validation was routine. The W3C and JSHint validators caught faults that browser testing had not, including a duplicate element ID and an invalid image src.
+
+- After each deployment, the live site was hard-refreshed and a short smoke test run: load the page, add a book, change its status, refresh, to confirm the deployed version matched development. This was necessary because relative paths and cached assets behave differently once hosted; broken asset paths were in fact found this way.
 
 ### 6.7 Bugs
 
