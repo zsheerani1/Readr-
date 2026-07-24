@@ -62,12 +62,12 @@ I chose this project because it targets a problem I understand directly as a rea
 
 ### 3.1 Design Process
 
-[Describe how you designed the app. Embed wireframes stored in `docs/wireframes/`.]
+assets/Wireframes/READR-add-book-modal.png
 
-![Wireframe — dashboard](docs/wireframes/dashboard.png)
-![Wireframe — add book modal](docs/wireframes/add-book-modal.png)
+assets/Wireframes/READR-desktop-wireframe.png
 
-[Note anything that changed between wireframe and final build, and why.]
+assets/Wireframes/READR-mobile-wireframe.png
+
 
 ### 3.2 Information Hierarchy & Navigation
 
