@@ -244,7 +244,7 @@ that these are covered by the manual procedures below.]
 
 | Validator | File(s) | Result |
 |---|---|---|
-| W3C Markup Validator | `index.html` | [No errors — screenshot](docs/testing/w3c-html.png) |
+| W3C Markup Validator | `index.html` | ![No errors — screenshot](assets/Code Validation/w3c-html-validation.png) |
 | W3C Jigsaw | `index.css` | ![No errors — screenshot](assets/Code Validation/READR-w3c-css-validation.png) |
 | ESLint / JSLint | `assets/js/*.js` | ![JSHint validation showing no major issues](assets/Code Validation/READR-JSHint-validation.png)
 
