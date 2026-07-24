@@ -157,9 +157,11 @@ from invalid or unavailable storage.]
 
 ### 4.2 Future Features
 
-- [e.g. Cross-device sync via a backend]
-- [e.g. Reading streak tracking]
-- [e.g. Export library as CSV]
+- **Reading sessions and streaks** — logging pages read per day rather than only current position, enabling streaks and a reading-pace estimate.
+- **Notes and quotes per book** — a place to record thoughts while reading, which is the most common reason readers keep a separate notes app alongside a tracker.
+- **Export and import** — download the library as CSV or JSON, both as a backup against the single-device limitation and to allow migration from Goodreads.
+- **Custom shelves and tags** — user-defined groupings beyond the three reading statuses, for genres, series or book clubs.
+- **Automated unit tests** — extracting the data-handling and validation logic into exported modules so it can be tested with Jest, currently prevented by the code being scoped inside the initialisation callback.
 
 ---
 
@@ -170,14 +172,12 @@ from invalid or unavailable storage.]
 - **JavaScript (ES6+)** — all interactivity; no frameworks
 - **[Google Books API](https://developers.google.com/books)** — book search,
   metadata, and cover images
-- **[Jest](https://jestjs.io/)** — automated unit testing
-- **Node.js / npm** — development dependencies only; the app runs with no
-  build step
 - **Git & GitHub** — version control
 - **GitHub Pages** — deployment
 - **VS Code** — editor
 - **[W3C Markup Validator](https://validator.w3.org/),
-  [W3C Jigsaw](https://jigsaw.w3.org/css-validator/), ESLint** — validation
+  [W3C Jigsaw](https://jigsaw.w3.org/css-validator/),
+- **[JSHint](https://jshint.com/)
 
 ---
 
@@ -185,31 +185,10 @@ from invalid or unavailable storage.]
 
 ### 6.1 Testing Principles: Manual vs Automated
 
-[In your own words: what manual testing is, what automated testing is, the
-strengths of each, when each is best deployed, and the split you chose for
-this project and why.]
+Manual testing entails a person using the application and checking the result against what was expected, and automated testing means writing code that tests code, which is slower to set up but can be re-run instantly on every change. 
 
-### 6.2 Automated Testing (Jest)
+Manual testing is better for judgement-based checks like layout, responsiveness and usability, while automation suits stable logic with clear inpts and outputs, particularly on larger or longer-lived projects where regressions are a risk. Readr was tested manually, because it is a small front-end application whose behaviour is mostly interface interaction and can be fully exercised by hand in a few minutes; automated unit tests on the data-handling functions are identified as the next step, and would require extracting that logic into exported modules first.
 
-Unit tests cover the pure utility functions in `assets/js/utils.js`:
-
-| Test file | Function under test | What is verified |
-|---|---|---|
-| `utils.test.js` | `secureUrl()` | `http://` cover URLs are upgraded to `https://`; empty input returns `''` |
-| `utils.test.js` | `formatStatus()` | Known statuses map to display labels; unknown statuses fall through unchanged |
-| `utils.test.js` | `generateId()` | Two consecutive calls return different values |
-
-**Running the tests:**
-
-```bash
-npm install
-npm test
-```
-
-![All Jest tests passing](docs/testing/jest-passing.png)
-
-[State which parts are not unit-tested (DOM rendering, event handling) and
-that these are covered by the manual procedures below.]
 
 ### 6.3 Manual Testing Procedure & Results
 
