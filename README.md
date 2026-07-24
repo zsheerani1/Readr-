@@ -86,20 +86,24 @@ The library filters rather than paginates. The controls: All, Reading, Want to R
 
 ### 3.3 Colour, Typography & Imagery
 
-[Palette with hex values, fonts and why, book covers as imagery, how the
-light/dark themes adapt.]
+The interface is built on a warm neutral base rather than pure white: the page background is #f4f1ec, cards sit on #ffffff with a secondary surface of #faf8f5, and dividers use #e2dcd2. 
+
+### Text 
+Text runs from #1c1a17 for primary content through #6f675c for supporting text to #9c9387 for hints and metadata, giving three distinct levels of emphasis without introducing additional colours. 
+The primary accent is a deep teal, #2b5f6e, used for the sidebar, primary buttons and headline figures; a brighter teal, #56dfda, marks interactive focus and star ratings. 
+
+Three status colours carry meaning across the app: green #2f7d54 for finished books, amber #a3701a for want-to-read, and red #b23b2d for destructive actions such as deleting a book. Status is never signalled by colour alone (each status pill also carries a text label) so the information remains available to users who cannot distinguish the hues.
+
+### Gradients. 
+Gradients are used sparingly and only where they carry meaning. Progress bars fill with a left-to-right gradient from the primary teal #2b5f6e to the brighter accent #56dfda, so that progress reads as movement towards a lighter, more active colour rather than as a flat block. The same two colours form the diagonal gradient used on placeholder covers for books the API returns no image for, tying the fallback state visually to the rest of the interface. No gradient is used decoratively on surfaces, backgrounds or cards: flat colour keeps the interface calm and lets the book covers provide the visual interest.
 
 ### 3.4 Accessibility
+- Semantic structure — HTML landmarks let screen reader users move between regions; a skip link, hidden until focused, bypasses the sidebar.
+- Keyboard operable — all controls are native elements, so focus order and semantics come from the browser. :focus-visible gives a clear accent outline without showing it to mouse users.
+- Never colour alone — status pills carry text labels, and progress is given as a page count as well as a bar.
+- Scalable text — sizes in rem, so the interface responds to browser font settings; line height 1.55 for readability.
+- Reduced motion — prefers-reduced-motion disables transitions and smooth scrolling. No autoplaying media; all state changes are user-initiated.
 
-- Semantic HTML landmarks (`header`, `nav`, `main`, `section`)
-- Labels linked to every form input; visually hidden (`sr-only`) labels where
-  a visible label would clutter the design
-- `aria-label` on icon-only buttons (theme toggle, close, delete)
-- `aria-live` status region announcing search results and errors
-- Keyboard support: modals trap focus, close on Escape, and return focus to
-  the opening element; carousel responds to arrow keys
-- Colour contrast checked in both themes
-- `role="progressbar"` with current values on all progress bars
 
 ### 3.5 Design Decisions & Deviations
 
