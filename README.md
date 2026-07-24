@@ -135,27 +135,40 @@ The library lists every book as a row showing cover, title, author, page count, 
 
 #### Reading Progress & Status
 
-[Description — page input, automatic status changes, finish dates.]
+Each book records a current page against its total, shown as a progress bar and a percentage. Updating the page count updates progress immediately, and setting the current page to the total marks the book as finished automatically, so the two never fall out of step. Status can also be changed directly from the library row.
+
+![Reading Progress](assets/Features/reading-progress-and-statuses.png)
 
 #### Star Ratings
 
-[Description — 1–5 rating, click current rating to clear, dashboard average.]
+Books can be rated from one to five stars. Clicking the current rating again clears it, so a rating can be removed without deleting the book. Ratings feed the average shown on the dashboard.
+
+![Star Ratings](assets/Features/star-rating.png)
 
 #### Carousel Shelf
 
-[Description — scrolling shelf, arrow buttons, keyboard support.]
+Arrow buttons scroll it on desktop, touch swipe on mobile, and the track is keyboard focusable so it can be scrolled without a mouse. Each cover carries a status badge, and books without a cover from the API display a generated placeholder rather than a gap.
 
-#### Dark / Light Theme
+![Carousel Shelf](assets/Features/carousel.png)
 
-[Description — system preference, manual toggle, persistence.]
+#### Dark/Light Theme
+
+A manual toggle switches between light and dark mode.
+
+![Light Mode](assets/Features/light-mode.png)
+
+![Dark Mode](assets/Features/dark-mode.png)
+
 
 #### Persistence
 
-[Description — localStorage for library, goals, and theme; graceful recovery
-from invalid or unavailable storage.]
+The library, goals and theme preference are stored in the browser's localStorage, so everything is restored on return without an account or login. Data is held per browser and per device, and does not sync across devices; cross-device sync is listed as a future feature.
 
 #### Accessibility 
 
+![Lighthouse Desktop](assets/Features/lighthouse-desktop.png)
+
+![Lighthouse Mobile](assets/Features/lighthouse-mobile.png)
 
 ### 4.2 Future Features
 
