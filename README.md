@@ -215,30 +215,29 @@ that these are covered by the manual procedures below.]
 
 | # | User story | Feature | Test action | Expected result | Actual result | Pass |
 |---|---|---|---|---|---|---|
-| T1 | US3 | Book search | Type "harry potter" in Add Book search | Results with covers appear after a short pause | | |
-| T2 | US3 | Book search | Type a single character | No search fires; no results shown | | |
-| T3 | US3 | Book search (failure) | Disconnect network, search | "Search unavailable" message; manual entry still works | | |
-| T4 | US2 | Validation | Submit the form with an empty title | "Title is required." shown; book not added | | |
-| T5 | US2 | Validation | Enter 0 or a negative page count | "Enter a valid number of pages." shown | | |
-| T6 | US4 | Progress | Set current page equal to total pages | Status changes to Finished automatically | | |
-| T7 | US4 | Progress | Enter a page number above the total | Value capped at total pages | | |
-| T8 | US5 | Goals | Enter an invalid goal (0, blank, text) | Inline error; goal unchanged | | |
-| T9 | US6 | Filtering | Click each filter pill | Only books with that status shown; active pill highlighted | | |
-| T10 | US8 | Persistence | Add a book, refresh the page | Book still present | | |
-| T11 | US10 | Theme | Toggle theme, refresh | Chosen theme persists | | |
-| T12 | US1 | Navigation | Visit an invalid hash / URL | Redirected to the main page | | |
-| T13 | — | Console | Perform all of the above with DevTools open | No errors in the console | | |
+| T1 | US3 | Book search | Type "harry potter" in Add Book search | Results with covers appear after a short pause | As expected | Pass |
+| T2 | US3 | Book search | Type a single character | No search fires; no results shown | As expected | Pass |
+| T3 | US3 | Book search (failure) | Disconnect network, search | "Search unavailable" message; manual entry still works | As expected | Pass |
+| T4 | US2 | Validation | Submit the form with an empty title | "Title is required." shown; book not added | As expected | Pass |
+| T5 | US2 | Validation | Enter 0 or a negative page count | "Enter a valid number of pages." shown | As expected  | Pass |
+| T6 | US4 | Progress | Set current page equal to total pages | Status changes to Finished automatically | As expected | Pass |
+| T7 | US4 | Progress | Enter a page number above the total | Value capped at total pages | As expected | Pass |
+| T8 | US5 | Goals | Enter an invalid goal (0, blank, text) | Inline error; goal unchanged | As expected | Pass |
+| T9 | US6 | Filtering | Click each filter pill | Only books with that status shown; active pill highlighted | As expected | Pass |
+| T10 | US8 | Persistence | Add a book, refresh the page | Book still present | As expected | Pass |
+| T11 | US10 | Theme | Toggle theme, refresh | Chosen theme persists | As expected | Pass |
+| T12 | US1 | Navigation | Visit an invalid hash / URL | Redirected to the main page | As expected |Pass |
+| T13 | — | Console | Perform all of the above with DevTools open | No errors in the console | As expected | Pass |
 
 ### 6.4 Responsiveness Testing
 
 | Device / width | Browser | Result |
 |---|---|---|
-| iPhone SE (375px) | Safari | |
-| iPad (768px) | Safari | |
-| Desktop (1440px) | Chrome | |
-| Desktop (1440px) | Firefox | |
+| iPhone SE (375px) | Google Chrome | ![Readr on Chrome iPhone SE](assets/responsiveness/Chrome-Desktop.png) |
+| iPad (768px) | Firefox | ![Readr on Firefox iPad](assets/responsiveness/Firefox-iPad.png) |
+| Desktop (1440px) | Chrome | ![Readr on Chrome Desktop](assets/responsiveness/Chrome-Desktop.png) |
+| Desktop (1440px) | Firefox | ![Firefox on Desktop](assets/responsiveness/Firefox-Desktop.png) |
 
-[Include screenshots at each size in `docs/testing/`.]
 
 ### 6.5 Code Validation
 
@@ -294,19 +293,15 @@ Linting metrics showed one function containing 142 statements with a complexity 
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/YOUR-USERNAME/Readr.git
-   cd Readr
+ git clone https://github.com/zsheerani1/Readr-.git
+cd Readr-
 ```
    (or download the ZIP from the green **Code** button and unzip it)
 2. Open `index.html` directly in a browser, **or** serve it locally:
 ```bash
-   python3 -m http.server 8000
+   ppython3 -m http.server 8000
 ```
    and visit `http://localhost:8000`.
-3. To run the automated tests:
-```bash
-   npm install
-   npm test
 ```
 
 ---
