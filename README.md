@@ -123,16 +123,15 @@ The dashboard opens with a time-of-day greeting and three cards summarising the 
 
 #### Add a Book (Google Books search)
 
-[Description — debounced search, results with covers, autofill, manual
-fallback, validation, confirmation toast.]
+Books are added through a modal that searches the Google Books API. Typing a title, author or ISBN triggers a search after a short pause rather than on every keystroke, reducing unnecessary requests; results appear with cover, title and author so the correct edition can be identified before selecting. Choosing a result autofills the title, author, page count and cover. Every field remains editable, and a book can be entered entirely by hand if it isn't found or the API is unavailable. The form validates before submitting, showing inline messages for missing or invalid values, and a confirmation toast appears once the book is added.
 
 ![Add book modal](assets/Features/add-book-modal.png)
 
 #### Your Library (list, filter, search)
 
-[Description — cards, filter pills, live search, empty states.]
+The library lists every book as a row showing cover, title, author, page count, rating, reading progress and status. Filter pills switch between all books and each reading status, with the active filter highlighted. 
 
-![Library](docs/screenshots/library.png)
+![Library](assets/Features/your-library.png)
 
 #### Reading Progress & Status
 
