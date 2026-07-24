@@ -117,7 +117,7 @@ Gradients are used sparingly and only where they carry meaning. Progress bars fi
 
 #### Dashboard & Reading Goals
 
-[Description and the feedback the user receives.]
+The dashboard opens with a time-of-day greeting and three cards summarising the user's reading: progress towards a monthly goal, progress towards a yearly goal, and a summary of books currently being read, books wanted, and average rating. Each goal card shows the count against the target, a progress bar, and a line stating how many books remain and what percentage of the goal is complete, so progress is readable at a glance rather than requiring calculation. Goals are edited through a modal and update immediately.
 
 ![Dashboard](docs/screenshots/dashboard.png)
 
@@ -126,7 +126,7 @@ Gradients are used sparingly and only where they carry meaning. Progress bars fi
 [Description — debounced search, results with covers, autofill, manual
 fallback, validation, confirmation toast.]
 
-![Add book modal](docs/screenshots/add-book.png)
+![Add book modal](assets/Features/add-book-modal.png)
 
 #### Your Library (list, filter, search)
 
@@ -154,6 +154,9 @@ fallback, validation, confirmation toast.]
 
 [Description — localStorage for library, goals, and theme; graceful recovery
 from invalid or unavailable storage.]
+
+#### Accessibility 
+
 
 ### 4.2 Future Features
 
