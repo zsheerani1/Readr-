@@ -107,7 +107,7 @@ Gradients are used sparingly and only where they carry meaning. Progress bars fi
 
 ### 3.5 Design Decisions & Deviations
 
-[Justify any deviations from convention, or state that none were made.]
+None were made.
 
 ---
 
