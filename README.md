@@ -4,7 +4,6 @@ Readr is a reading tracker interactive web application for people who love books
 
 **Live site:** https://zsheerani1.github.io/Readr-/
 
-![Readr dashboard on desktop](docs/screenshots/hero.png)
 
 ---
 
