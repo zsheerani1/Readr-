@@ -244,9 +244,9 @@ that these are covered by the manual procedures below.]
 
 | Validator | File(s) | Result |
 |---|---|---|
-| W3C Markup Validator | `index.html` | ![No errors — screenshot](assets/Code Validation/w3c-html-validation.png) |
-| W3C Jigsaw | `index.css` | ![No errors — screenshot](assets/Code Validation/READR-w3c-css-validation.png) |
-| ESLint / JSLint | `assets/js/*.js` | ![JSHint validation showing no major issues](assets/Code Validation/READR-JSHint-validation.png)
+| W3C Markup Validator | `index.html` | ![No errors — screenshot](assets/code-validation/READR-w3c-html-validation.png) |
+| W3C Jigsaw | `index.css` | ![No errors — screenshot](assets/code-validation/READR-w3c-css-validation.png) |
+| JSHint | `assets/js/*.js` | ![JSHint validation showing no major issues](assets/code-validation/READR-JSHint-validation.png)
 
 ### 6.6 Testing During Development
 
