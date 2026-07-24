@@ -246,7 +246,7 @@ that these are covered by the manual procedures below.]
 |---|---|---|
 | W3C Markup Validator | `index.html` | [No errors — screenshot](docs/testing/w3c-html.png) |
 | W3C Jigsaw | `index.css` | [No errors — screenshot](docs/testing/jigsaw-css.png) |
-| ESLint / JSLint | `assets/js/*.js` | [No major issues — screenshot](docs/testing/lint.png) |
+| ESLint / JSLint | `assets/js/*.js` | ![JSHint validation showing no major issues](assets/code-validation/readr-jshint-validation.png)
 
 ### 6.6 Testing During Development
 
@@ -282,8 +282,6 @@ test to confirm the deployed version matches development. Evidence in
 4. Wait 1–2 minutes; the live URL appears at the top of the Pages settings.
 5. Verify the live site loads and matches the development version.
 
-The live site is available at:
-[https://YOUR-USERNAME.github.io/Readr/](https://YOUR-USERNAME.github.io/Readr/)
 
 ### 7.2 Running the Project Locally
 
