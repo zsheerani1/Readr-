@@ -259,18 +259,24 @@ test to confirm the deployed version matches development. Evidence in
 ### 6.7 Bugs
 
 **Fixed:**
+### Bug: Google Books search returning "Search unavailable"
+Every search returned the "Search unavailable" message instead of results. The console showed the API was rejecting the request rather than the network failing, which pointed to a configuration fault rather than a code fault. The cause was the API key's referrer restrictions not matching the origin the reqests came from.
+Removing the restriction fixed the search but left the key open to any site- not acceptable for a key in a public repository. It was instead restricted to the deployed GitHub Pages domain and limited to the Books API only, then retested on the live site.
+The bug also confirmed the error handling works: the failed request was caught, the user was shown a message, and manual entry still worked rather than the interface failing silently.
 
-| Bug | Cause | Fix |
-|---|---|---|
-| Theme toggle stopped working after adding an emoji button | Two elements shared `id="theme-toggle"`; `getElementById` attached the listener to the first only | Removed the duplicate so exactly one element owns the id |
-| Title/Author fields misaligned in the Add Book modal | Grid cells of unequal height were vertically centred; error spans reserved inconsistent space | `align-items: start` on the form grid and a consistent `min-height` on error messages |
-| `favicon.ico` 404 in the console on every page load | No favicon provided | Added a favicon and linked it in the head |
+### Bug: The SyntaxError that stopped the script running.
+Duplicate const STORAGE_KEY declaration introduced while editing; the whole file failed to parse so the app rendered as static HTML with no functionality. Found via the console (Unexpected token ']', then the duplicate declaration), fixed by reverting to the working version.
+
+### Bug: Invalid HTML found by validation, not by testing. 
+A stray </span>, an empty src="", a required select with no placeholder option, and role="tab" used without matching tabpanels. All invisible in the browser — the app worked fine — but caught by the W3C validator. Worth noting explicitly that these were found by validation rather than functional testing, since that shows why you ran both.
+
+### Bug: Non-breaking spaces in the JavaScript.
+Invisible characters introduced by copy-pasting, flagged by JSHint as Unexpected '£'. Harmless at runtime but caught by linting.
 
 **Known / unfixed:**
 
-[List honestly with an explanation, or state that no known bugs remain.]
-
----
+### Bug: Single large render function. 
+Linting metrics showed one function containing 142 statements with a complexity of 17, against a median of 2 across the file. It works correctly, but would be more readable and easier to maintain if split into separate functions per section. This was left unchanged to avoid introducing breakage late in development, and is identified as the main refactoring priority.
 
 ## 7. Deployment
 
