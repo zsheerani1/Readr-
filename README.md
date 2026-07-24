@@ -62,11 +62,11 @@ I chose this project because it targets a problem I understand directly as a rea
 
 ### 3.1 Design Process
 
-assets/Wireframes/READR-add-book-modal.png
+![Desktop wireframe of the Readr dashboard](assets/Wireframes/READR-desktop-wireframe.png)
 
-assets/Wireframes/READR-desktop-wireframe.png
+![Mobile wireframe showing the single-column layout](assets/Wireframes/READR-mobile-wireframe.png)
 
-assets/Wireframes/READR-mobile-wireframe.png
+![Wireframe of the add book modal](assets/Wireframes/READR-add-book-modal.png)
 
 
 ### 3.2 Information Hierarchy & Navigation
