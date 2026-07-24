@@ -304,19 +304,14 @@ cd Readr-
 
 ### Code
 
-- [Attribute code adapted from external sources — tutorials, articles,
-  documentation — with a link and where it is used. Mirror each attribution
-  in a comment above the relevant code.]
-- [AI assistance: disclose here in accordance with the course's policy on AI
-  tools, describing which parts of the project it contributed to.]
+- The three-state reading model (want to read / reading / finished) is a convention established by [Goodreads](https://www.goodreads.com/) and [The StoryGraph](https://thestorygraph.com/).
+- - AI assistance (Claude, Anthropic) was used during this project in the following ways: generating the wireframe diagrams in `assets/wireframes/` from my own layout decisions; creating the template of this README, which I populated diagnosing and correcting HTML validation errors; interpreting linter and validator output. All application code was written and tested by me, and all testing results recorded in this document are my own observations.
 
 ### Content & Media
 
 - Book metadata and cover images are provided by the
   [Google Books API](https://developers.google.com/books).
-- Icons are custom inline SVGs in the style of
-  [Lucide](https://lucide.dev/) / [Feather](https://feathericons.com/).
-- Fonts from [Google Fonts](https://fonts.google.com/): [list them].
+- - Fonts from [Google Fonts](https://fonts.google.com/): [Fraunces](https://fonts.google.com/specimen/Fraunces) for headings and [Work Sans](https://fonts.google.com/specimen/Work+Sans) for body text.
 
 ---
 
