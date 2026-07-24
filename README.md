@@ -71,8 +71,16 @@ I chose this project because it targets a problem I understand directly as a rea
 
 ### 3.2 Information Hierarchy & Navigation
 
-[Explain the page structure, the order information is presented in, and the
-sidebar navigation.]
+The layout has two regions: a fixed sidebar for navigation and a scrolling main column for content. Keeping navigation always visible means every part of the app is one click away.
+The sidebar holds the Readr wordmark at the top, then three links: Stats, Shelf and Library, ordered by how often they're used. The theme toggle sits at the bottom, separated from the links because it's a display preference, not a dstination.
+
+The main column is ordered by priority for a returning user. A greeting confirms their data has loaded. 'Search and 'Add Book' come next, above the fold, because finding and adding books are the most frequent tasks. Three cards then show monthly progress, yearly progress and current reading activity, grouped together because they're read as one status summary. 
+
+'Your Shelf' follows as a scrolling row of covers, giving a quick visual sense of the collection. The full library list comes last, as the most detailed view and the least often needed.
+
+Hierarchy is carried by headings, type size and spacing rather than borders. Section headings are set in a larger serif face so the boundaries between sections are obvious at a glance. Each library row shows cover, title, author, rating, progress and status together, answering the likely questions about a book in one look. Status appears as both a text label and a progress bar, not colour alone, so it stays readable for users who can't distinguish the colours.
+
+The library filters rather than paginates. The controls: All, Reading, Want to Read, Finished, reuse the same three states used everywhere else in the app, keeping the vocabulary consistent.
 
 ### 3.3 Colour, Typography & Imagery
 
