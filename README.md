@@ -51,11 +51,10 @@ I chose this project because it targets a problem I understand directly as a rea
 - **US4:** I want to mark a book as read, so that I can distinguish what I've finished from what I still plan to read.
 - **US5:** I want to filter or view my shelf by reading status, so that I can see at a glance what I'm currently working through.
 - **US6:** I want to remove a book from my shelf, so that my list stays relevant and uncluttered.
-- **US7:** As a reader, I want to rate books I have finished, so that I can
+- **US7:** I want to rate books I have finished, so that I can
   remember which ones I enjoyed.
 - **US8:** I want to see statistics about my reading over time, so that I can understand my habits and whether I'm reading more than before.
 - **US9:** I want the app to remember my light/dark theme preference, so that it looks the way I left it every time I return.
-- **US10:** 
 
 ---
 
