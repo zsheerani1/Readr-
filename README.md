@@ -316,5 +316,4 @@ cd Readr-
 
 ## 9. Acknowledgements
 
-- [Your tutor / mentor]
-- [Friends or family who user-tested the app]
+- Len Johnson
